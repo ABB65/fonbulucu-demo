@@ -7,15 +7,17 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "@nuxt/content": "^2.0.1",
-    "nuxt": "3.0.0-rc.4",
-    "@nuxtjs/eslint-config-typescript": "^10.0.0",
-    "@nuxtjs/tailwindcss": "^5.1.2",
-    "@tailwindcss/typography": "^0.5.2",
-    "eslint": "^8.16.0",
-    "typescript": "^4.7.2"
+    "@nuxt/content": "^2.2.2",
+    "@nuxtjs/eslint-config-typescript": "^11.0.0",
+    "@tailwindcss/typography": "^0.5.7",
+    "eslint": "^8.23.1",
+    "remixicon": "^2.5.0",
+    "sitemap": "^7.1.1",
+    "typescript": "^4.8.3",
+    "nuxt": "3.0.0"
   },
   "dependencies": {
-    "remixicon": "^2.5.0"
+    "@nuxtjs/tailwindcss": "^6.1.3"
   }
 }
+

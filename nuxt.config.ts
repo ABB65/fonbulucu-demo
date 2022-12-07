@@ -1,4 +1,3 @@
-import { defineNuxtConfig } from 'nuxt'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
@@ -24,5 +23,8 @@ export default defineNuxtConfig({
     //   // See the available themes on https://github.com/shikijs/shiki/blob/main/docs/themes.md#all-theme
     //   theme: 'dracula'
     // }
+  },
+  typescript: {
+    shim: false
   }
 })

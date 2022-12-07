@@ -11,23 +11,41 @@
       <div class="flex-1 min-w-0 flex justify-between text-left">
         <div>
           <h2 class="font-semibold text-lg mb-2">
-            Burada duyuru başlığı yer almaktadır. !
+            {{ duyuru.baslik }}
           </h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ducimus similique nisi commodi est quia molestiae voluptates voluptas, ea aperiam libero adipisci, odit ipsa labore officia excepturi! Deleniti, nulla velit.</p>
+          <p>
+            {{ duyuru.aciklama }}
+          </p>
         </div>
       </div>
       <div
         class="text-right text-base font-semibold text-slate-600 dark:text-white"
       >
-        14/12/2022
+        {{ new Date(duyuru.createdAt).toLocaleString() }}
         <p class="text-slate-800">
-          Bayhan Bayramoğlu
+          {{ duyuru.yazar }}
         </p>
       </div>
     </div>
   </li>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const props = defineProps({
+  duyuru: {
+    type: Object,
+    default () {
+      return {
+        ID: 'deddbdef-947e-42c7-a8f3-df4462067481',
+        baslik: 'Contentrain yatırım turunda.',
+        aciklama:
+          'Contentrain içerik yönetim sistemi modern mimarisi ve esnek platform uyumluluğu, rakiplerinde olmayan kaydedilebilir ve paylaşılabilir veri modelleriyle proje yöneticilerini iş tekrarından kurtararak web projelerini çok hızlı geliştirmelerine yardımcı olur.\n\nfonbulucu kitlesel fonlama kampanyasında yatırım alarak; Contentrain’in yüksek potansiyelini etkili pazarlama faaliyetleriyle sürekli destekleyerek global pazarda kendi kategorisindeki en güçlü ürün haline getirmek istiyoruz.',
+        yazar: 'Bayhan Bayramoğlu',
+        createdAt: 1670421180479
+      }
+    }
+  }
+})
+</script>
 
 <style scoped></style>
