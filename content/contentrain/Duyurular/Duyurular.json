@@ -20,5 +20,12 @@
     "aciklama": "7 Aralık Çarşamba Contentrain yatırımcılarıyla buluştu.",
     "yazar": "Bayhan BAYRAMOĞLU",
     "createdAt": 1670441372482
+  },
+  {
+    "ID": "36cda800-0205-44ff-abe1-668a247968f9",
+    "baslik": "Ben de yeni bir başlık ekledim",
+    "aciklama": "Harika bir duyurum var",
+    "yazar": "Sercan Oray",
+    "createdAt": 1670441564943
   }
 ]
