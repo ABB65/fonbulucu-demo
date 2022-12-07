@@ -8,7 +8,11 @@
         <div class="flex items-center">
           <nuxt-link to="/">
             <a class="text-2xl">
-              <img class="w-24 md:w-36 h-auto" src="/img/logo.png" alt="Tatlumba">
+              <img
+                class="w-24 md:w-36 h-auto"
+                src="/img/logo.png"
+                alt="Tatlumba"
+              >
             </a>
           </nuxt-link>
         </div>
@@ -18,24 +22,22 @@
             class="nav-link px-3 py-1"
             exact-active-class="text-violet-500"
           >
-            Home
+            Anasayfa
           </nuxt-link>
           <nuxt-link
-            to="/services"
+            to="https://invest.fonbulucu.com/kampanya/DZ3XBO#hakkinda"
+            target="_blank"
             class="nav-link px-3 py-1"
             exact-active-class="text-violet-500"
           >
-            Services
+            Kampanya
           </nuxt-link>
           <nuxt-link
-            to="/case-studies"
-            class="nav-link px-3 py-1"
-            exact-active-class="text-violet-500"
+            class="btn-primary ml-3 flex items-center"
+            to="https://contentrain.io"
+            target="_blank"
           >
-            Case Studies
-          </nuxt-link>
-          <nuxt-link class="btn-primary ml-3" to="/contact">
-            Contact
+            Contentrain <i class="ri-arrow-right-up-line ml-3" />
           </nuxt-link>
         </nav>
         <button
@@ -52,7 +54,7 @@
     >
       <div class="flex justify-between w-full">
         <div class="flex items-center">
-          <nuxt-link to="/">
+          <nuxt-link to="https://contentrain.io" target="_blank">
             <a class="text-2xl">
               <img class="w-24 h-auto" src="/img/logo.png" alt="Tatlumba">
             </a>
@@ -68,28 +70,30 @@
           class="nav-link py-1 mt-4"
           exact-active-class="text-violet-500"
         >
-          Home
+          Anasayfa
         </nuxt-link>
         <nuxt-link
           to="/services"
           class="nav-link py-1 mt-4"
           exact-active-class="text-violet-500"
         >
-          Services
+          Duyurular
         </nuxt-link>
         <nuxt-link
-          to="/case-studies"
+          to="https://invest.fonbulucu.com/kampanya/DZ3XBO#hakkinda"
+          target="_blank"
           class="nav-link py-1 mt-4"
           exact-active-class="text-violet-500"
         >
-          Case Studies
+          Kampanya
         </nuxt-link>
         <nuxt-link
-          to="/contact"
+          to="https://contentrain.io"
+          target="_blank"
           class="nav-link py-1 mt-4"
           exact-active-class="text-violet-500"
         >
-          Contact
+          Contentrain
         </nuxt-link>
       </nav>
     </div>

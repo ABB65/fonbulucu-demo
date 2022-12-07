@@ -1,18 +1,16 @@
 <template>
   <div class="container px-4 sm:px-0 mx-auto">
-    <section
-      class="home-hero app-section mt-12 pb-16"
-    >
+    <section class="home-hero app-section mt-12 pb-16">
       <div class="content md:max-w-lg p-0 md:pr-2">
         <h1 class="text-6xl font-semibold mb-6">
-          Your Businness needs a Voice
+          Bizden habersiz kalmayın.
         </h1>
         <p class="mb-8 text-xl">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus,
-          quas dolorem, nostrum esse quisquam!
+          Sizleri bilgilendirmek ve gelişmeler için her zaman güncel tutmak
+          istiyoruz.
         </p>
         <button class="btn-primary flex items-center">
-          Scedule a call <i class="ri-arrow-right-up-line ml-3" />
+          Duyuruları oku<i class="ri-arrow-right-up-line ml-3" />
         </button>
       </div>
       <div class="media p-0 md:pl-2">
@@ -23,8 +21,12 @@
         >
       </div>
     </section>
-    <section class="references py-16 grid grid-cols-2  md:grid-cols-5 gap-8 md:gap-12 lg:gap-16 items-center justify-between">
-      <div class="reference-trusted-logo-container flex justify-center col-span-2 md:col-span-1">
+    <section
+      class="references py-16 grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12 lg:gap-16 items-center justify-between"
+    >
+      <div
+        class="reference-trusted-logo-container flex justify-center col-span-2 md:col-span-1"
+      >
         <img
           src="/img/logoipsum-1.svg"
           alt="Reference logo"
@@ -40,7 +42,18 @@
         >
       </div>
     </section>
-    <section class="services py-16">
+
+    <section class="services py-8 mb-16">
+      <div class="content max-w-2xl mx-auto text-center mt-8 mb-8">
+        <h2 class="font-semibold text-4xl mb-6">
+          Duyurular
+        </h2>
+        <ul class="w-full max-w-2xl mx-auto divide-y divide-gray-200 dark:divide-gray-700">
+          <NewsItem v-for="i in 19" :key="i" />
+        </ul>
+      </div>
+    </section>
+    <!-- <section class="services py-16">
       <div class="content max-w-2xl mx-auto text-center mt-8 mb-8">
         <h2 class="font-semibold text-4xl mb-6">
           Marketing strategy has to be the easies Tatlumbaa has to be the best.
@@ -86,68 +99,34 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section
       class="app-banner p-20 flex items-center justify-between mt-16 max-w-5xl mx-auto flex-wrap"
     >
       <div class="content max-w-md pb-8 lg:pb-0 basis-full md:basis-1/2">
         <h2 class="text-white text-4xl font-semibold mb-4">
-          Let’s spark conversations together
+          Kampanyamız fonbulucu üzerinde yayında.
         </h2>
         <p class="text-white text-lg">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Contentrain'in geleceğine ortak olmak için yatırımcımız olun.
         </p>
       </div>
 
-      <div class="cta-button flex justify-start md:justify-end basis-full md:basis-1/2">
-        <button class="btn-primary">
-          Schedule a call <i class="ri-arrow-right-up-line ml-3" />
+      <div
+        class="cta-button flex justify-start md:justify-end basis-full md:basis-1/2"
+      >
+        <button class="btn-primary flex items-center">
+          Kampanyaya git <i class="ri-arrow-right-up-line ml-3" />
         </button>
       </div>
     </section>
+
     <section class="services py-16 mt-16">
       <div class="content max-w-2xl mx-auto text-center mt-8 mb-8">
         <h2 class="font-semibold text-4xl mb-6">
-          We help marketing teams and start-ups raise dollars
+          Kalite tesadüf değildir.
         </h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-          sequi temporibus corrupti, minus, inventore dolorem ipsum officia
-          ducimus .
-        </p>
-      </div>
-      <div class="app-cards pb-16 pt-4">
-        <div v-for="study in 3" :key="study" class="app-card p-6">
-          <div class="image">
-            <img
-              class="w-full h-auto rounded-2xl"
-              src="https://images.unsplash.com/photo-1587614313085-5da51cebd8ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-              alt="Stategy one"
-            >
-          </div>
-          <div class="content mt-3">
-            <h3 class="font-semibold text-lg mb-2">
-              Case Study amet consectetur adipisicing elit {{ study }}
-            </h3>
-          </div>
-          <div class="button mt-6">
-            <nuxt-link class="btn-primary-outline" to="/">
-              Read case study
-              <i class="ri-arrow-right-up-line ml-3 align-middle" />
-            </nuxt-link>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="services pb-16">
-      <div class="content max-w-2xl mx-auto text-center mt-8 mb-8">
-        <h2 class="font-semibold text-4xl mb-6">
-          Quality is no accident
-        </h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-          inventore.
-        </p>
+        <p>Kalitenin tesadüf olmadığına inanan bazı kullanıcılarımız.</p>
       </div>
       <div class="app-cards pb-32 pt-4">
         <div v-for="study in 3" :key="study" class="app-card p-6">
@@ -156,14 +135,14 @@
           </div>
           <div class="content mt-3">
             <h3 class="font-medium">
-              Wordify is fast, reliable, and passionate. They actually care
-              about creating good content.
+              Bir çok içerik yönetim sistemi kullandım ancak Contentrain'de
+              yaşadığım deneyimi şimdiye kadar yaşamamıştım.
             </h3>
           </div>
           <div class="mt-6">
             <p class="text-sm flex items-center">
-              <span class="w-4 border-b border-2 border-violet-500 mr-2" />Evan Ferguson,
-              Shopify
+              <span class="w-4 border-b border-2 border-violet-500 mr-2" />John
+              Doe, Siprax
             </p>
           </div>
         </div>
