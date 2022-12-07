@@ -27,5 +27,12 @@
     "aciklama": "Harika bir duyurum var",
     "yazar": "Sercan Oray",
     "createdAt": 1670441564943
+  },
+  {
+    "ID": "b20f8988-0b4a-447d-82d9-f512ffcb31cd",
+    "baslik": "Start-up Anı Duvarı ",
+    "aciklama": "Yolunuz açık olsun başarılar dilerim.",
+    "yazar": "Sertan Kumova ",
+    "createdAt": 1670446682700
   }
 ]
