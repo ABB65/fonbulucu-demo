@@ -10,13 +10,12 @@
     </div>
 
     <div class="text-sm mt-2">
-      <p class="mb-1">
-        {{ new Date(duyuru.createdAt).toLocaleString() }}
-      </p>
-
       <p class="flex items-center font-semibold">
         <span class="w-4 border-b border-2 border-rose-500 mr-2" />
         {{ duyuru.yazar }}
+      </p>
+      <p class="mb-1">
+        {{ new Date(duyuru.createdAt).toLocaleString() }}
       </p>
     </div>
   </li>
