@@ -1,31 +1,23 @@
 <template>
-  <li class="p-6 sm:p-8">
-    <div class="flex items-center space-x-4">
-      <div class="flex-shrink-0">
-        <div
-          class="w-12 h-12 mr-2 rounded-full flex items-center justify-center bg-gradient-to-tl from-violet-100 via-slate-200 to-violet-100"
-        >
-          <i class="ri-user-2-fill text-4xl text-slate-300" />
-        </div>
-      </div>
-      <div class="flex-1 min-w-0 flex justify-between text-left">
-        <div>
-          <h2 class="font-semibold text-lg mb-2">
-            {{ duyuru.baslik }}
-          </h2>
-          <p>
-            {{ duyuru.aciklama }}
-          </p>
-        </div>
-      </div>
-      <div
-        class="text-right text-base font-semibold text-slate-600 dark:text-white"
-      >
+  <li class="p-6 sm:p-8 text-left">
+    <div>
+      <h2 class="font-semibold text-lg mb-2">
+        {{ duyuru.baslik }}
+      </h2>
+      <p>
+        {{ duyuru.aciklama }}
+      </p>
+    </div>
+
+    <div class="text-sm mt-2">
+      <p class="mb-1">
         {{ new Date(duyuru.createdAt).toLocaleString() }}
-        <p class="text-slate-800">
-          {{ duyuru.yazar }}
-        </p>
-      </div>
+      </p>
+
+      <p class="flex items-center font-semibold">
+        <span class="w-4 border-b border-2 border-rose-500 mr-2" />
+        {{ duyuru.yazar }}
+      </p>
     </div>
   </li>
 </template>

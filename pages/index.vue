@@ -15,40 +15,39 @@
       <div class="media p-0 md:pl-2">
         <img
           class="w-full h-auto rounded-2xl mt-12 md:mt-0"
-          :src="hero.gorsel"
+          src="/img/stats.jpg"
           alt="Hero image"
         >
       </div>
     </section>
     <section
-      class="references py-16 grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12 lg:gap-16 items-center justify-between"
+      ref="references"
+      class="references grid grid-cols-2 mt-16 md:grid-cols-5 gap-8 md:gap-12 lg:gap-16 items-center align-center"
     >
+      <p class="text-center lg:text-left text-xl col-span-2 md:col-span-1">
+        Bize Güvenenler
+      </p>
       <div
-        class="reference-trusted-logo-container flex justify-center col-span-2 md:col-span-1"
+        v-for="(logo,index) in 4"
+        :key="index"
+        class="reference-logo-container flex justify-center"
+        :class="index === logo - 1 ? 'lg:justify-end' : ''"
       >
-        <img
-          src="/img/logoipsum-1.svg"
-          alt="Reference logo"
-          class="reference-logo w-1/2 md:w-full h-auto"
-        >
-      </div>
-      <div v-for="logo in 4" :key="logo" class="reference-logo-container">
         <img
           v-if="logo !== 0"
           :src="'/img/logoipsum-' + (logo + 1) + '.svg'"
-          alt="Reference logo"
           class="reference-logo w-full h-auto"
         >
       </div>
     </section>
-
-    <section class="services py-8 mb-16">
+    <section class="services py-8 my-16">
       <div class="content mx-auto text-center mt-8 mb-8">
         <h2 class="font-semibold text-4xl mb-6">
-          Duyurular
+          Fonbulucu kampanya hatırası.
         </h2>
+        <p>Kampanya süresince tüm yatırımcılarımız ve dileyen herkes Contentrain üzerinden bu duvara mesajlarını bırakabilirler. Contentrain üzerinden web sitelerinin yönetiminin ne kadar kolay olduğunu sizde test edin.</p>
         <ul
-          class="w-full mx-auto divide-y divide-gray-200 dark:divide-gray-700"
+          class="w-full mx-auto divide-y divide-gray-200 dark:divide-gray-700 mt-8"
         >
           <NewsItem
             v-for="duyuru in duyurular"
@@ -99,7 +98,7 @@
           </div>
           <div class="mt-6">
             <p class="text-sm flex items-center">
-              <span class="w-4 border-b border-2 border-violet-500 mr-2" />John
+              <span class="w-4 border-b border-2 border-rose-500 mr-2" />John
               Doe, Siprax
             </p>
           </div>

@@ -3,7 +3,7 @@
     <div class="hero-background-image" />
     <div class="flex justify-between flex-wrap relative">
       <div class="content w-full lg:w-1/2">
-        <h3 class="font-medium text-2xl text-violet-300 mb-4">
+        <h3 class="font-medium text-2xl text-rose-300 mb-4">
           {{ subtitle }}
         </h3>
         <h1 class="font-semibold text-5xl text-white mb-6">

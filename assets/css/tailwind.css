@@ -22,25 +22,25 @@ p {
 }
 @layer components {
   .btn-primary {
-    @apply px-4 py-2 sm:px-6 sm:py-3 bg-violet-500 text-white hover:text-violet-500 hover:bg-white transition-colors rounded-xl focus:outline-none focus:ring-1 focus:ring-violet-400 focus:ring-opacity-75;
+    @apply px-4 py-2 sm:px-6 sm:py-3 bg-rose-500 text-white hover:text-rose-500 hover:bg-white transition-colors rounded-xl focus:outline-none focus:ring-1 focus:ring-rose-400 focus:ring-opacity-75;
   }
   .btn-primary-lighter {
-    @apply px-4 py-2 sm:px-6 sm:py-3 bg-violet-100 text-violet-500 hover:text-white hover:bg-violet-500 transition-colors rounded-xl focus:outline-none focus:ring-1 focus:ring-violet-400 focus:ring-opacity-75;
+    @apply px-4 py-2 sm:px-6 sm:py-3 bg-rose-100 text-rose-500 hover:text-white hover:bg-rose-500 transition-colors rounded-xl focus:outline-none focus:ring-1 focus:ring-rose-400 focus:ring-opacity-75;
   }
   .btn-primary-outline {
-    @apply px-4 py-2 sm:px-6 sm:py-3 bg-white text-violet-500 hover:bg-violet-500 hover:text-white transition-colors ring-1 ring-violet-500 rounded-xl focus:outline-none focus:ring-1 focus:ring-violet-400 focus:ring-opacity-75;
+    @apply px-4 py-2 sm:px-6 sm:py-3 bg-white text-rose-500 hover:bg-rose-500 hover:text-white transition-colors ring-1 ring-rose-500 rounded-xl focus:outline-none focus:ring-1 focus:ring-rose-400 focus:ring-opacity-75;
   }
   .nav-link {
-    @apply hover:text-violet-500 transition-colors cursor-pointer;
+    @apply hover:text-rose-500 transition-colors cursor-pointer;
   }
   .app-link {
-    @apply text-violet-500 hover:text-slate-500 flex items-center transition-colors cursor-pointer;
+    @apply text-rose-500 hover:text-slate-500 flex items-center transition-colors cursor-pointer;
   }
   .social-link {
-    @apply text-slate-500 hover:text-violet-500 flex items-center transition-colors cursor-pointer;
+    @apply text-slate-500 hover:text-rose-500 flex items-center transition-colors cursor-pointer;
   }
   .app-banner {
-    @apply bg-gradient-to-tl from-slate-900 via-slate-700 to-violet-500 rounded-3xl;
+    @apply bg-gradient-to-tl from-slate-900 via-slate-700 to-rose-500 rounded-3xl;
   }
   .app-cards {
     @apply flex flex-wrap justify-between;
