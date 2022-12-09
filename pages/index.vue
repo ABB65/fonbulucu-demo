@@ -20,6 +20,7 @@
         >
       </div>
     </section>
+    <!--
     <section
       ref="references"
       class="references grid grid-cols-2 mt-16 md:grid-cols-5 gap-8 md:gap-12 lg:gap-16 items-center align-center"
@@ -39,15 +40,23 @@
           class="reference-logo w-full h-auto"
         >
       </div>
-    </section>
+    </section> -->
     <section class="services py-8 my-16">
       <div class="content mx-auto text-center mt-8 mb-8">
-        <h2 class="font-semibold text-4xl mb-6">
-          Fonbulucu kampanya hatırası.
-        </h2>
-        <p>Kampanya süresince tüm yatırımcılarımız ve dileyen herkes Contentrain üzerinden bu duvara mesajlarını bırakabilirler. Contentrain üzerinden web sitelerinin yönetiminin ne kadar kolay olduğunu sizde test edin.</p>
+        <div class="max-w-3xl mx-auto">
+          <h2 class="font-semibold text-4xl mb-6">
+            Fonbulucu kampanya hatırası.
+          </h2>
+
+          <p>
+            Kampanya süresince tüm yatırımcılarımız ve dileyen herkes
+            Contentrain üzerinden bu duvara mesajlarını bırakabilirler.
+            Bu sayede Contentrain üzerinden web sitelerinin yönetiminin ne kadar kolay
+            olduğunu sizlerde test edebilirsiniz.
+          </p>
+        </div>
         <ul
-          class="w-full mx-auto divide-y divide-gray-200 dark:divide-gray-700 mt-8"
+          class="max-w-6xl mx-auto divide-y divide-slate-300 dark:divide-gray-700 mt-8"
         >
           <NewsItem
             v-for="duyuru in duyurular"
