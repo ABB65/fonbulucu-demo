@@ -34,5 +34,12 @@
     "aciklama": "Yolunuz açık olsun başarılar dilerim.",
     "yazar": "Sertan Kumova ",
     "createdAt": 1670446682700
+  },
+  {
+    "ID": "f45da0b5-a705-491c-b692-c641ac58f017",
+    "baslik": "Bu bir test",
+    "aciklama": "Cok güzel bir test",
+    "yazar": "demo",
+    "createdAt": 1670848177912
   }
 ]
